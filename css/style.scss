@@ -6,15 +6,31 @@ nav {
   div.app__navbar-logo {
     margin-top: 89px;
     margin-left: 165px;
+    @media (max-width: 35em) {
+      margin-left: 20px;
+      margin-top: 30px;
+    }
   }
   ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     margin-right: 164px;
+    @media (max-width: 35em) {
+      display: none;
+      position: fixed;
+      inset: 0 0 0 10%;
+      padding: min(30vh, 10rem) 1rem;
+      flex-direction: column;
+      background: var(--OffWhite-color);
+    }
     li {
       margin-left: 37px;
       margin-top: 100px;
+      @media (max-width: 35em) {
+        margin-top: 30px;
+        margin-left: 30px;
+      }
       a {
         text-decoration: none;
         color: var(--DarkGrayishBlue-color);
@@ -27,6 +43,27 @@ nav {
       }
     }
   }
+  div.burger {
+    display: none;
+    position: relative;
+    top: 20px;
+    left: -10px;
+    @media (max-width: 35em) {
+      display: block;
+    }
+    img.menu-open {
+      @media (max-width: 35em) {
+      }
+    }
+    img.menu-close {
+      @media (max-width: 35em) {
+        position: absolute;
+        top: -7px;
+        left: 4px;
+        display: none;
+      }
+    }
+  }
 }
 header {
   display: grid;
@@ -34,9 +71,28 @@ header {
   article.app__header-article-left {
     margin-top: 55px;
     margin-left: 165px;
-    div.app__header-article-image {
+    @media (max-width: 35em) {
+      margin-top: 30px;
+      margin-left: 15px;
+    }
+    div.app__header-article-image-desktop {
       width: 730px;
       height: 301px;
+      @media (max-width: 35em) {
+        display: none;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    div.app__header-article-image-mobile {
+      width: 350px;
+      height: 301px;
+      display: none;
+      @media (max-width: 35em) {
+        display: block;
+      }
       img {
         width: 100%;
         height: 100%;
@@ -51,6 +107,10 @@ header {
       letter-spacing: 0.005em;
       color: var(--VeryDarkBlue-color);
       margin-top: 35px;
+      @media (max-width: 35em) {
+        font-size: 40px;
+        margin-top: 15px;
+      }
     }
     p {
       font-weight: 400;
@@ -61,6 +121,10 @@ header {
       color: var(--DarkGrayishBlue-color);
       margin-left: 385px;
       margin-top: -170px;
+      @media (max-width: 35em) {
+        margin-left: 5px;
+        margin-top: 5px;
+      }
     }
     a {
       text-decoration: none;
@@ -80,6 +144,10 @@ header {
         background-color: var(--VeryDarkBlue-color);
         cursor: pointer;
       }
+      @media (max-width: 35em) {
+        top: 45px;
+        left: 5px;
+      }
     }
   }
   article.app__header-article-right {
@@ -88,6 +156,11 @@ header {
     height: 511px;
     margin-top: 55px;
     margin-left: 30px;
+    @media (max-width: 35em) {
+      width: 345px;
+      margin-top: 755px;
+      margin-left: -345px;
+    }
     h1 {
       margin-top: 28px;
       margin-left: 24px;
@@ -135,7 +208,9 @@ section {
   article {
     margin-left: 165px;
     margin-top: 81px;
-
+    @media (max-width: 35em) {
+      margin-left: 0px;
+    }
     div.section__img {
       width: 99px;
       height: 127px;
@@ -172,6 +247,9 @@ section {
   }
   article.section__article-left {
     position: relative;
+    @media (max-width: 35em) {
+      left: 20px;
+    }
     h1 {
       position: absolute;
       top: -5px;
@@ -181,6 +259,9 @@ section {
       position: absolute;
       top: 40px;
       left: 125px;
+      @media (max-width: 35em) {
+        width: 215px;
+      }
     }
     p {
       position: absolute;
@@ -191,6 +272,10 @@ section {
   }
   article.section__article-center {
     position: relative;
+    @media (max-width: 35em) {
+      top: 165px;
+      left: -11px;
+    }
     div.section__img {
       position: absolute;
       left: -94px;
@@ -204,6 +289,9 @@ section {
       position: absolute;
       top: 40px;
       left: 34px;
+      @media (max-width: 35em) {
+        width: 215px;
+      }
     }
     p {
       position: absolute;
@@ -214,6 +302,11 @@ section {
   }
   article.section__article-right {
     position: relative;
+    @media (max-width: 35em) {
+      left: -31px;
+      top: 330px;
+      margin-bottom: -60px;
+    }
     div.section__img {
       position: absolute;
       left: -199px;
@@ -227,6 +320,9 @@ section {
       position: absolute;
       top: 40px;
       left: -70px;
+      @media (max-width: 35em) {
+        width: 215px;
+      }
     }
     p {
       position: absolute;
