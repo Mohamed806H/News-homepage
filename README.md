@@ -4,12 +4,12 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ## Screenshot
 
-![desktop-design](https://user-images.githubusercontent.com/91362640/198853572-20b2e7ff-3fa5-496e-a20f-1019cfce7374.jpg)
+![desktop-preview](https://user-images.githubusercontent.com/91362640/218097274-ba3b4e04-e1a8-48b5-9f43-5db591bafb0a.jpg)
 
 ## Links
 
-- Solution URL:(https://www.frontendmentor.io/solutions/nftpreviewcardcomponent-yzH6qpKxsa)
-- Live Site URL:(https://mohamed806h.github.io/NFT-preview-card-component/)
+- Solution URL:()
+- Live Site URL:()
 
 ## Built with
 
